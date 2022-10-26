@@ -1,0 +1,18 @@
+
+from IKRB346C import IKRB346C as MyRobot
+
+T100 = MyRobot(90,90,-90)
+
+#DESIRED END EFFECTOR POSITION VECTOR FOR ALL CONDITIONS OF PX !> A1 + A2 + A3 + D6 && PY !> A1 + A2 + A3 + D6 && PZ !> A1 + A2 + A3 + D6 + D1
+T100.setPosition(0.02, 0.22, 0.245)
+
+#DESIRED END EFFECTOR ORIENTATION
+T100.setRPY(90,90,20) #Roll,Pitch,Yaw
+
+print(T100.GET_TH1_DEG())
+print(T100.GET_TH2_DEG())
+print(T100.GET_TH3_DEG())
+print(T100.GET_TH4_DEG())
+print(T100.GET_TH5_DEG())
+print(T100.GET_TH6_DEG())
+print('\n')
